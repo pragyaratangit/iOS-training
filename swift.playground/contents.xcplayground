@@ -4,5 +4,6 @@
         <page name='swift basics'/>
         <page name='error handling'/>
         <page name='Untitled Page'/>
+        <page name='basic operator in swift'/>
     </pages>
 </playground>

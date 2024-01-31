@@ -12,7 +12,8 @@ var greeting = "Hello, playground"
 var age = 20
 assert(age >= 18 , "Age should be greater than 18 to vote") // both condition and message
 //assert(age >= 18 ) // only condition
-//assertionFailure( "Age should be greater than 18 to vote") // if codition is validated by if else then only message
+
+// assertionFailure( "Age should be greater than 18 to vote") // if codition is validated by if else then only message
 
 
 // precondition

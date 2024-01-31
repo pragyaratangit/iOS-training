@@ -47,11 +47,11 @@ print(env)
 
 
 // tuples => (different type of elements in one collection)
-
-var myPair = ("pragyaratan", 21, 100)
-let (nameP, ageP , _) = myPair
+// number of elements and their type is fixed and can only defined at the compile time
+var myTuple = ("pragyaratan", 21, 100)
+let (nameP, ageP , _) = myTuple
 print(nameP, ageP)
-print(myPair.1, myPair.0, myPair.self)
+print(myTuple.1, myTuple.0, myTuple.self)
 
 
 
