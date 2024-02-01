@@ -6,5 +6,6 @@
         <page name='Untitled Page'/>
         <page name='basic operator in swift'/>
         <page name='strings and characters'/>
+        <page name='collection types'/>
     </pages>
 </playground>
