@@ -8,5 +8,6 @@
         <page name='strings and characters'/>
         <page name='collection types'/>
         <page name='control flow in swift'/>
+        <page name='functions in swift'/>
     </pages>
 </playground>
