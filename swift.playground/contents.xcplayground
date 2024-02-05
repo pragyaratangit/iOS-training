@@ -11,5 +11,6 @@
         <page name='functions in swift'/>
         <page name='closure in swift'/>
         <page name='enumeration in swift'/>
+        <page name='structures and classes'/>
     </pages>
 </playground>
