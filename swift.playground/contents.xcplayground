@@ -9,5 +9,7 @@
         <page name='collection types'/>
         <page name='control flow in swift'/>
         <page name='functions in swift'/>
+        <page name='closure in swift'/>
+        <page name='enumeration in swift'/>
     </pages>
 </playground>
