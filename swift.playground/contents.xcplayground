@@ -14,6 +14,7 @@
         <page name='structures and classes'/>
         <page name='properties of classes'/>
         <page name='methods in swift'/>
+        <page name='init and deinit'/>
         <page name='inheritance in swift'/>
     </pages>
 </playground>
