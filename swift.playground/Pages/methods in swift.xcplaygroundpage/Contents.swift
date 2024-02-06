@@ -94,3 +94,5 @@ var ratan = Player(name: "Ratan")
 
 // as ratan is playing on same device so then game level for him will also be the level for pragya becoz level is a static member and will be same for all instance
 print(ratan.levelTracker.advance(to: 4))
+
+
