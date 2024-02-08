@@ -18,5 +18,6 @@
         <page name='inheritance in swift'/>
         <page name='optional chaining'/>
         <page name='concurrency'/>
+        <page name='type casting in swift'/>
     </pages>
 </playground>

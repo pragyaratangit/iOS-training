@@ -29,7 +29,7 @@ async {
 }
 
 
-// we can throw error from async function
+// we ctyean throw error from async function
 enum error: Error {
     case length
 }
