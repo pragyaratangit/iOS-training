@@ -60,3 +60,6 @@ class TempClass {
 var obj: TempClass? = TempClass()
 print("obj is used ")
 obj = nil
+
+
+
