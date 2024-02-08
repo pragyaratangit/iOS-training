@@ -17,5 +17,6 @@
         <page name='init and deinit'/>
         <page name='inheritance in swift'/>
         <page name='optional chaining'/>
+        <page name='concurrency'/>
     </pages>
 </playground>
