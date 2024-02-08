@@ -89,7 +89,7 @@ if let subs = objC.objA?.objB?.cnt {
     print("subs " ,subs)
 }
 
-if let ans = objC.objA?.objB?[10]{
+if let ans = objC.objA?.objB?[10]error{
     print(ans)
 }
 
