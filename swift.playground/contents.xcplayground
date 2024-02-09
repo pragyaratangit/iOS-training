@@ -19,5 +19,7 @@
         <page name='optional chaining'/>
         <page name='concurrency'/>
         <page name='type casting in swift'/>
+        <page name='extensions'/>
+        <page name='nested types'/>
     </pages>
 </playground>
