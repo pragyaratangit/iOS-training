@@ -21,5 +21,6 @@
         <page name='type casting in swift'/>
         <page name='extensions'/>
         <page name='nested types'/>
+        <page name='protocols in swift'/>
     </pages>
 </playground>
