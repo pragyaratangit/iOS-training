@@ -22,5 +22,6 @@
         <page name='extensions'/>
         <page name='nested types'/>
         <page name='protocols in swift'/>
+        <page name='generics'/>
     </pages>
 </playground>
