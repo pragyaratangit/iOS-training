@@ -24,5 +24,6 @@
         <page name='protocols in swift'/>
         <page name='generics'/>
         <page name='access control in swift'/>
+        <page name='automatic reference cycle ARC'/>
     </pages>
 </playground>
