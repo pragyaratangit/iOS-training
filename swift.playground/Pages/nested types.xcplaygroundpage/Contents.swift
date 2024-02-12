@@ -42,4 +42,4 @@ struct MyCard {
 
 
 let theTwoOfHearts = MyCard(rank: .two, suit: .hearts)
-print("theAceOfSpades: \(theAceOfSpades.description)")
+print("theAceOfSpades: \(theTwoOfHearts.description)")

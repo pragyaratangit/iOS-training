@@ -8,11 +8,9 @@ var greeting = "Hello, playground"
 
 // Extensions are used to add new functionality to an already exixting class, sturcture, enum or protocols
 
-
 //Extensions can add new functionality to a type, but they can’t override existing functionality.
 
 //Extensions can add new computed properties, but they can’t add stored properties, or add property observers to existing properties.
-
 
 
 extension Double {

@@ -23,5 +23,6 @@
         <page name='nested types'/>
         <page name='protocols in swift'/>
         <page name='generics'/>
+        <page name='access control in swift'/>
     </pages>
 </playground>

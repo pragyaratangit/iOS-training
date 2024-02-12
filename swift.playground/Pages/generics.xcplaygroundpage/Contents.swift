@@ -63,3 +63,119 @@ protocol GenericProtocol{
 class GenericClass: GenericProtocol {
     typealias prp1 = Int // now prp1 will be of type Int
 }
+
+
+
+// Generic types
+
+struct MyStack<Element> {
+    var arr: [Element] = []
+    var size = 0
+    
+    mutating func push(_ item: Element){
+        arr.append(item)
+        size+=1
+    }
+    
+    mutating func pop() -> Element {
+        var val = arr[size-1]
+        arr.removeLast()
+        size-=1
+        return val
+    }
+}
+
+var stack:MyStack<String> = MyStack()
+
+stack.push("abc")
+stack.push("bcd")
+stack.push("cde")
+stack.push("def")
+stack.push("efg")
+
+
+while stack.size > 0 {
+    print(stack.pop())
+}
+
+
+protocol GenericProtocol2{
+    // contraint to associated type
+    associatedtype  prp1: Equatable
+}
+
+class GenericClass2: GenericProtocol {
+    typealias prp1 = String // now prp1 will be of type Int
+}
+
+
+// generic with where clause
+
+protocol Container {
+    associatedtype Item
+    mutating func append(_ item: Item)
+    var count: Int { get }
+    subscript(i: Int) -> Item { get }
+}
+
+
+// a function which gets two input both of type container
+func allItemsMatch<C1: Container, C2: Container>
+        (_ firstContainer: C1, _ secondContainer: C2) -> Bool
+        where C1.Item == C2.Item, C1.Item: Equatable {
+
+    if firstContainer.count != secondContainer.count {
+        return false
+    }
+
+    for i in 0..<firstContainer.count {
+        if firstContainer[i] != secondContainer[i] {
+            return false
+        }
+    }
+
+    return true
+}
+
+
+// we can add where clouse while defining function con
+// contextual where clause
+extension Container {
+    func average() -> Double where Item == Int {
+        var sum = 0
+        for i in 0..<count {
+            sum += self[i]
+        }
+        
+        return Double(sum) / Double(count)
+    }
+}
+
+// where clause can be add in extention itself
+// Generic where clause
+extension Container where Item == Int {
+    func average2() -> Double where Item == Int {
+        var sum = 0
+        for i in 0..<count {
+            sum += self[i]
+        }
+        
+        return Double(sum) / Double(count)
+    }
+}
+
+
+// generic subscript
+extension Container {
+    // Indices is for subscript type
+    // it will return array of Item
+    subscript<Indices: Sequence>(indices: Indices) -> [Item]
+            where Indices.Iterator.Element == Int {
+        var result: [Item] = []
+        for index in indices {
+            result.append(self[index])
+        }
+        return result
+    }
+}
+
