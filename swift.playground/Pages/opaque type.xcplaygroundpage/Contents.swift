@@ -107,3 +107,14 @@ func makeTrapezoid() ->  some Shape {
 }
 let trapezoid = makeTrapezoid()
 print(trapezoid.draw())
+
+
+
+//Boxed types involve wrapping a value in a container or box. This container introduces an additional layer, providing a common interface for various types.
+//This can be beneficial in scenarios where you need to work with different types uniformly or when dealing with value semantics.
+
+// by writing any we allow this array to hold any object of class and structure that conforms to Shape protocol
+
+var arrayOfShapes: [any Shape] = []
+arrayOfShapes.append(trapezoid)
+
