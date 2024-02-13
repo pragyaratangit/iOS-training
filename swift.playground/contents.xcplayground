@@ -26,5 +26,6 @@
         <page name='access control in swift'/>
         <page name='automatic reference cycle ARC'/>
         <page name='opaque type'/>
+        <page name='advance operators'/>
     </pages>
 </playground>
