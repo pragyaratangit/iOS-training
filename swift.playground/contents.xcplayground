@@ -25,5 +25,6 @@
         <page name='generics'/>
         <page name='access control in swift'/>
         <page name='automatic reference cycle ARC'/>
+        <page name='opaque type'/>
     </pages>
 </playground>
