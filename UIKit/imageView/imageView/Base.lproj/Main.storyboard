@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="imageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" highlightedImage="hotelImage1" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQp-cR-azJ">
+                                <rect key="frame" x="40" y="75" width="250" height="175"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="4" bottom="8" trailing="2"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Y0-rS-GtK">
+                                <rect key="frame" x="40" y="300" width="250" height="175"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="hotelImage2" translatesAutoresizingMaskIntoConstraints="NO" id="SQG-0f-DGM">
+                                <rect key="frame" x="40" y="527" width="250" height="175"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Y0-rS-GtK" firstAttribute="trailing" secondItem="FQp-cR-azJ" secondAttribute="trailing" constant="100" id="Hhi-yn-eMu"/>
+                            <constraint firstItem="SQG-0f-DGM" firstAttribute="trailing" secondItem="FQp-cR-azJ" secondAttribute="trailing" constant="100" id="Xss-K2-pce"/>
+                            <constraint firstItem="3Y0-rS-GtK" firstAttribute="leading" secondItem="FQp-cR-azJ" secondAttribute="leading" id="b7j-c5-Nkj"/>
+                            <constraint firstItem="SQG-0f-DGM" firstAttribute="leading" secondItem="FQp-cR-azJ" secondAttribute="leading" id="stF-iQ-wI3"/>
+                            <constraint firstItem="3Y0-rS-GtK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tk7-Yw-Y7G"/>
+                        </constraints>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                    </view>
+                    <connections>
+                        <outlet property="hotel1ImageView" destination="FQp-cR-azJ" id="5Ow-58-rFw"/>
+                        <outlet property="urlImage" destination="3Y0-rS-GtK" id="v9g-il-ogc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hotelImage1" width="1300" height="956"/>
+        <image name="hotelImage2" width="640" height="427"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

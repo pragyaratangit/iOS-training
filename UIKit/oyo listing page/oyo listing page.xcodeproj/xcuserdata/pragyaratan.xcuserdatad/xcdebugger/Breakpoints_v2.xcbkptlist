@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FB9BD10E-F61E-4791-84F9-40508B84379F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E00E7665-1336-4F2A-B12A-7C1A1BDEB556"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "oyo listing page/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E00E7665-1336-4F2A-B12A-7C1A1BDEB556 - 231c9cddf6363bf1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "oyo_listing_page.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "oyo listing page"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pragyaratan/Desktop/iOS-training-code/UIKit/oyo%20listing%20page/oyo%20listing%20page/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "544">
+               </Location>
+               <Location
+                  uuid = "E00E7665-1336-4F2A-B12A-7C1A1BDEB556 - 231c9cddf6363bd0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "oyo_listing_page.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "oyo listing page"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pragyaratan/Desktop/iOS-training-code/UIKit/oyo%20listing%20page/oyo%20listing%20page/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "544">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -28,7 +28,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="O20-la-U41">
-                                        <rect key="frame" x="26" y="133" width="341" height="32"/>
+                                        <rect key="frame" x="25.499999999997044" y="132.99999999998499" width="340.99999999994179" height="31.99999999999477"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="LVA-iU-ay5"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="eFF-fo-g4Y"/>

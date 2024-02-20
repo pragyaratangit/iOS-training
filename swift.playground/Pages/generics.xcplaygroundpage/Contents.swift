@@ -83,9 +83,11 @@ struct MyStack<Element> {
         size-=1
         return val
     }
+    
+    
 }
 
-var stack:MyStack<String> = MyStack()
+var stack = MyStack<String>()
 
 stack.push("abc")
 stack.push("bcd")
@@ -179,3 +181,13 @@ extension Container {
     }
 }
 
+
+
+func myFun<T>(variable: Int) -> T {
+    print("va;ue of T = \(variable)")
+    
+    return 10 as! T
+}
+
+
+myFun(variable: 10)
