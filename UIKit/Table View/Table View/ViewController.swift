@@ -17,9 +17,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let nib = UINib(nibName: "DemoTableViewCell", bundle: nil)
+//        let nib = UINib(nibName: "DemoTableViewCell", bundle: nil)
+//        
+//        tableView.register(nib, forCellReuseIdentifier: "DemoTableViewCell")
+        tableView.register(DemoTableViewCell.nib(), forCellReuseIdentifier: DemoTableViewCell.identifier)
         
-        tableView.register(nib, forCellReuseIdentifier: "DemoTableViewCell")
+        tableView.register(FieldTableViewCell.nib(), forCellReuseIdentifier: FieldTableViewCell.identifier)
+        
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -30,7 +34,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("table cell")
+//        print("table cell")
     }
     
 }
@@ -38,14 +42,48 @@ extension ViewController: UITableViewDelegate {
 
 extension ViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        return 9
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DemoTableViewCell", for: indexPath)  as! DemoTableViewCell
+        
+        if indexPath.row > 5 {
+            let cellWithField = tableView.dequeueReusableCell(withIdentifier: FieldTableViewCell.identifier, for: indexPath) as! FieldTableViewCell
+            
+//            cellWithField.myInputField
+            return cellWithField
+        }
         
         
-        cell.myImage.backgroundColor = .red
-        cell.myLabel.text = names[indexPath.row]
+        
+        if indexPath.row > 2 {
+            let cellWithImage = tableView.dequeueReusableCell(withIdentifier: DemoTableViewCell.identifier, for: indexPath) as! DemoTableViewCell
+            
+            cellWithImage.setImageLabel(with: "Gear", image: "gear")
+            
+            return cellWithImage
+        }
+        
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        cell.textLabel?.text = "Hello world"
+        let mySwitch = UISwitch()
+        cell.accessoryView = mySwitch
+        
+        mySwitch.isOn = true
+        mySwitch.addTarget(self, action: #selector(didSwitchChange), for: .valueChanged)
+//        cell.myImage.backgroundColor = .red
+//        cell.myLabel.text = names[indexPath.row]
         return cell
+    }
+    
+    @objc func didSwitchChange(_ sender: UISwitch){
+        if sender.isOn {
+            print("swich is on")
+        }
+        else {
+            print("switch is off")
+        }
     }
 }

@@ -15,6 +15,8 @@
 		CC8B35652B87280500A6A5FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8B35632B87280500A6A5FE /* LaunchScreen.storyboard */; };
 		CC8B356E2B872EBC00A6A5FE /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8B356C2B872EBC00A6A5FE /* DemoTableViewCell.swift */; };
 		CC8B356F2B872EBC00A6A5FE /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC8B356D2B872EBC00A6A5FE /* DemoTableViewCell.xib */; };
+		CC8B35722B87397A00A6A5FE /* FieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8B35702B87397A00A6A5FE /* FieldTableViewCell.swift */; };
+		CC8B35732B87397A00A6A5FE /* FieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC8B35712B87397A00A6A5FE /* FieldTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		CC8B35662B87280500A6A5FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC8B356C2B872EBC00A6A5FE /* DemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
 		CC8B356D2B872EBC00A6A5FE /* DemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoTableViewCell.xib; sourceTree = "<group>"; };
+		CC8B35702B87397A00A6A5FE /* FieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldTableViewCell.swift; sourceTree = "<group>"; };
+		CC8B35712B87397A00A6A5FE /* FieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			children = (
 				CC8B35582B87280200A6A5FE /* AppDelegate.swift */,
 				CC8B356C2B872EBC00A6A5FE /* DemoTableViewCell.swift */,
+				CC8B35702B87397A00A6A5FE /* FieldTableViewCell.swift */,
+				CC8B35712B87397A00A6A5FE /* FieldTableViewCell.xib */,
 				CC8B356D2B872EBC00A6A5FE /* DemoTableViewCell.xib */,
 				CC8B355A2B87280200A6A5FE /* SceneDelegate.swift */,
 				CC8B355C2B87280200A6A5FE /* ViewController.swift */,
@@ -132,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC8B35652B87280500A6A5FE /* LaunchScreen.storyboard in Resources */,
+				CC8B35732B87397A00A6A5FE /* FieldTableViewCell.xib in Resources */,
 				CC8B35622B87280500A6A5FE /* Assets.xcassets in Resources */,
 				CC8B356F2B872EBC00A6A5FE /* DemoTableViewCell.xib in Resources */,
 				CC8B35602B87280200A6A5FE /* Main.storyboard in Resources */,
@@ -147,6 +154,7 @@
 			files = (
 				CC8B355D2B87280200A6A5FE /* ViewController.swift in Sources */,
 				CC8B35592B87280200A6A5FE /* AppDelegate.swift in Sources */,
+				CC8B35722B87397A00A6A5FE /* FieldTableViewCell.swift in Sources */,
 				CC8B356E2B872EBC00A6A5FE /* DemoTableViewCell.swift in Sources */,
 				CC8B355B2B87280200A6A5FE /* SceneDelegate.swift in Sources */,
 			);
