@@ -19,7 +19,9 @@ class MyUIViewController: UIViewController {
 
     @IBAction func myVCButtonTap(_ sender: Any) {
         
-        present(MyViewController(), animated:true)
+//        present(MyViewController(), animated:true)
+        //
+        dismiss(animated: true)
     }
     
 }
