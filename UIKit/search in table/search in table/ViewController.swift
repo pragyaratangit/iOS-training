@@ -31,13 +31,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if string.isEmpty {
             print("backspace")
             var str = textField.text!
-            print(str.removeLast())
-            print("str \(str)")
-            print(string)
+//            print(str.removeLast())
+//            print("str \(str)")
+//            print(string)
             setFilterdata(str)
         }
         else if let text = textField.text {
-            print("newchar")
+//            print("newchar")
             setFilterdata(text+string)
         }
         
@@ -48,9 +48,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         filteredData.removeAll()
         
-        print(query)
+//        print(query)
         if query.count == 0 {
-            print("nodwhc")
+//            print("nodwhc")
             filteredData = []
             tableView.reloadData()
             return
