@@ -64,9 +64,13 @@ extension ViewController: UITableViewDataSource {
         
         if indexPath.row % 2 == 0 {
             cell = table.dequeueReusableCell(withIdentifier: FirstTableViewCell.identifier, for: indexPath)
+            cell?.accessoryType = .detailDisclosureButton
         }
         else{
             cell = table.dequeueReusableCell(withIdentifier: SecondTableViewCell.identifier, for: indexPath)
+            let _switch = UISwitch()
+            _switch.isOn = true
+            cell?.accessoryView = _switch
         }
         
         return cell!
