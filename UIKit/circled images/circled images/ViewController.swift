@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
 
@@ -31,6 +32,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         collectionView?.register(CircleCollectionViewCell.self, forCellWithReuseIdentifier: CircleCollectionViewCell.identifier)
         
+        
+        
         guard let collectionView = collectionView else{
             return
         }
@@ -48,6 +51,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         10
     }
+    
+    
+     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
