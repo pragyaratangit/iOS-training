@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MyUI View Controller-->
+        <!--FirstVC-->
         <scene sceneID="yr9-aG-u9V">
             <objects>
-                <viewController storyboardIdentifier="green_vc" id="wVN-mg-uCN" customClass="MyUIViewController" customModule="navigation_view_controller" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="green_vc" title="FirstVC" id="wVN-mg-uCN" customClass="MyUIViewController" customModule="navigation_view_controller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLF-tZ-BMJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,13 +29,14 @@
                         <viewLayoutGuide key="safeArea" id="2Dt-VS-Xeg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sb1-5W-enQ"/>
                     <connections>
                         <outlet property="myVCButton" destination="LW1-Cr-r4G" id="m6O-ej-8aq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9w1-z2-cvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-432" y="-181"/>
+            <point key="canvasLocation" x="493.89312977099235" y="-181.69014084507043"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -64,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="320" y="-182"/>
+            <point key="canvasLocation" x="1246.5648854961833" y="-182.3943661971831"/>
         </scene>
     </scenes>
     <resources>

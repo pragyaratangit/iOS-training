@@ -94,6 +94,19 @@ class ViewController: UIViewController {
             sender.titleLabel?.font = .systemFont(ofSize: 60, weight: .bold)
             sender.isEnabled = false
         }
+        if checkForVictory() {
+            let alertController = UIAlertController(title: "Game Over", message: "Winner" , preferredStyle: .actionSheet)
+            
+            
+            let alert = UIAlertAction(title: "Reset", style: .default, handler:  { _ in
+                self.resetBoard()
+            })
+            
+            
+            alertController.addAction(alert)
+            self.present(alertController, animated:  true)
+        }
+        
         if checkForBoardFull() {
             let alertController = UIAlertController(title: "Game Over", message: "Want to continue", preferredStyle: .actionSheet)
             
@@ -107,24 +120,12 @@ class ViewController: UIViewController {
             self.present(alertController, animated:  true)
         }
         
-        if checkForVictory() {
-            let alertController = UIAlertController(title: "Game Over", message: "Winner" , preferredStyle: .actionSheet)
-            
-            
-            let alert = UIAlertAction(title: "Reset", style: .default, handler:  { _ in
-                self.resetBoard()
-            })
-            
-            
-            alertController.addAction(alert)
-            self.present(alertController, animated:  true)
-        }
+       
     }
     
     func checkCurrentType(_ s: String, _ btn: UIButton) -> Bool{
         return btn.title(for: .normal) == s
     }
-    
     
     func checkForVictory() -> Bool {
         
