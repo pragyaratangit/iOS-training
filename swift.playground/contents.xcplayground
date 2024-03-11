@@ -27,5 +27,6 @@
         <page name='automatic reference cycle ARC'/>
         <page name='opaque type'/>
         <page name='advance operators'/>
+        <page name='api and web service'/>
     </pages>
 </playground>

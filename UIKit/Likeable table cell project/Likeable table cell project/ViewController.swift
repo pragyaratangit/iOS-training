@@ -45,6 +45,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     let items:[LikeableItem] = DataClass().getData()
    
+
+    
     private let table: UITableView = {
         let table = UITableView()
         

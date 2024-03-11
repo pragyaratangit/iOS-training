@@ -7,6 +7,30 @@
 
 import UIKit
 
+
+struct Hotels: Decodable{
+    let hotelData: [Hotel]
+}
+
+struct Hotel: Decodable {
+    let id: Int
+    let name: String
+    let address: String
+    let alternate_name: String
+    let city:String
+    let country_name:String
+    let short_address: String
+//    let services: [String]
+    let slasher_price: Double
+    let final_price: Double
+    let discount_percentage: Int
+    let tax_txt: String
+    
+//    let best_image: String
+}
+
+
+
 class ViewController: UIViewController {
 
     
@@ -51,7 +75,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        
         initialStyling()
-        
+        getHotelDetails()
     }
 
     
@@ -83,6 +107,42 @@ class ViewController: UIViewController {
             range: NSRange(location: 0, length: attributedString.length))
         
         roomOriginalPrice.attributedText = attributedString
+    }
+    
+    
+    
+    
+    func getHotelDetails() {
+
+        
+        URLSession.shared.dataTask(with: URL(string: "https://oyolisting.free.beeceptor.com/getHotelData")!){
+            (data, respons, error) in
+            
+            if error != nil {
+                print("error in api \(String(describing: error?.localizedDescription))")
+            }
+            
+            if data != nil && data?.count != 0 {
+                print("data is not nill")
+                let decoder = JSONDecoder()
+                
+                do{
+                    
+                    let hotelData = try decoder.decode(Hotels.self, from: data!)
+                   
+//                    let hotelData = try JSONSerialization.jsonObject(with: data!)
+//                    let hotel = hotelData as! Dictionary<String, Any>
+//                    let dataString = String(data: data!, encoding: .utf8)
+//                    print(dataString!)
+                    for hotel in hotelData.hotelData {
+                        print(hotel)
+                    }
+                }
+                catch let error {
+                    print("error while decoding \(error.localizedDescription)")
+                }
+            }
+        }.resume()
     }
 }
 

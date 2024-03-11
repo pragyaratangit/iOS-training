@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+/*
 class Hotel {
     var hotelName: String?
     var hotelAddress: String?
@@ -37,3 +37,27 @@ class Hotel {
     
     
 }
+
+*/
+/*
+struct Hotels: Decodable{
+    let hotelData: [Hotel]
+}
+
+struct Hotel: Decodable {
+    let id: Int
+    let name: String
+    let address: String
+    let alternate_name: String
+    let city:String
+    let country_name:String
+    let short_address: String
+//    let services: [String]
+    let slasher_price: Double
+    let final_price: Double
+    let discount_percentage: Int
+    let tax_txt: String
+    
+//    let best_image: String
+}
+*/

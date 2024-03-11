@@ -21,10 +21,12 @@ class ViewController: UIViewController {
         self.navigationItem.largeTitleDisplayMode = .never
         
         navigationItem.rightBarButtonItems = [
+            // this will be right most
             UIBarButtonItem(
                 title: "Profile",
                 style: .done,
                 target: self,
+                // action will be a OBJC function and passed inside #selector(actionName)
                 action: nil
             ),
             UIBarButtonItem(image: UIImage(systemName: "person.circle"), style: .plain, target: self, action: nil)
