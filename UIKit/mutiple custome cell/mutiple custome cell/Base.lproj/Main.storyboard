@@ -46,6 +46,40 @@
             </objects>
             <point key="canvasLocation" x="1043.5114503816794" y="3.5211267605633805"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Xsq-ga-EaN">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="2dg-od-ZLd" customClass="SecondViewController" customModule="mutiple_custome_cell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jaJ-b6-WiD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysg-A0-rke">
+                                <rect key="frame" x="121.66666666666669" y="351" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="VMk-zU-5hh"/>
+                                    <constraint firstAttribute="height" constant="150" id="vST-pB-S7F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C9e-6H-SH0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ysg-A0-rke" firstAttribute="centerY" secondItem="jaJ-b6-WiD" secondAttribute="centerY" id="Yuh-ne-eTs"/>
+                            <constraint firstItem="Ysg-A0-rke" firstAttribute="centerX" secondItem="jaJ-b6-WiD" secondAttribute="centerX" id="qQk-iz-T63"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbl_txt" destination="Ysg-A0-rke" id="JM9-U2-Axm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOB-tc-Tfv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="63"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vnq-MN-Ni6">
             <objects>

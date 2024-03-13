@@ -183,11 +183,17 @@ extension Container {
 
 
 
-func myFun<T>(variable: Int) -> T {
-    print("va;ue of T = \(variable)")
-    
-    return 10 as! T
+// generic in return type
+
+
+func genericReturn<T>(_ input: Bool) -> T {
+    if input {
+        return 1 as! T
+    }
+    return "false" as! T
 }
 
+let intValue: Int = genericReturn(true)
+let stringValue: String = genericReturn(false)
 
-myFun(variable: 10)
+print(intValue, stringValue)

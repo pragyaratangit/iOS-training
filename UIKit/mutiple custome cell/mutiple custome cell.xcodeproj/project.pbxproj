@@ -17,6 +17,7 @@
 		CC173E402B8C72BC00AF4524 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC173E3E2B8C72BC00AF4524 /* FirstTableViewCell.xib */; };
 		CC173E432B8C72CE00AF4524 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC173E412B8C72CE00AF4524 /* SecondTableViewCell.swift */; };
 		CC173E442B8C72CE00AF4524 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC173E422B8C72CE00AF4524 /* SecondTableViewCell.xib */; };
+		CC717E552B9F13CA001DD596 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717E542B9F13CA001DD596 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CC173E3E2B8C72BC00AF4524 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
 		CC173E412B8C72CE00AF4524 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
 		CC173E422B8C72CE00AF4524 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		CC717E542B9F13CA001DD596 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				CC173E3D2B8C72BC00AF4524 /* FirstTableViewCell.swift */,
 				CC173E3E2B8C72BC00AF4524 /* FirstTableViewCell.xib */,
 				CC173E2F2B8C71F200AF4524 /* Main.storyboard */,
+				CC717E542B9F13CA001DD596 /* SecondViewController.swift */,
 				CC173E322B8C71F400AF4524 /* Assets.xcassets */,
 				CC173E342B8C71F400AF4524 /* LaunchScreen.storyboard */,
 				CC173E372B8C71F400AF4524 /* Info.plist */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC717E552B9F13CA001DD596 /* SecondViewController.swift in Sources */,
 				CC173E2E2B8C71F200AF4524 /* ViewController.swift in Sources */,
 				CC173E432B8C72CE00AF4524 /* SecondTableViewCell.swift in Sources */,
 				CC173E2A2B8C71F200AF4524 /* AppDelegate.swift in Sources */,

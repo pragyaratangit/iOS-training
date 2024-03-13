@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var navBarButton: UIBarButtonItem!
     
-    
+    var data = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
     
     
     override func viewDidLoad() {
@@ -53,7 +53,19 @@ extension ViewController: UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        table.deselectRow(at: indexPath, animated: true)
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        
+        vc.lbl = data[indexPath.row]
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
+        
     }
 }
 
@@ -73,11 +85,12 @@ extension ViewController: UITableViewDataSource {
             cell?.accessoryView = _switch
         }
         
+        cell?.textLabel?.text = data[indexPath.row]
         return cell!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return data.count
     }
     
     

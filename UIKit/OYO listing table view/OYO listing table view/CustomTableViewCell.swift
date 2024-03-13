@@ -42,11 +42,16 @@ class CustomTableViewCell: UITableViewCell {
     public func configure(with hotel: Hotel){
         
         
-        if let data = try? Data(contentsOf: URL(string: hotel.image)!){
-            self.hotelImage.image = UIImage(data: data)
+       
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            if let data = try? Data(contentsOf: URL(string: hotel.image)!){
+                DispatchQueue.main.async{
+                    self.hotelImage.image = UIImage(data: data)
+                }
+                
+            }
         }
-        
-        
         
         self.rating.text = String(hotel.rating)
         self.ratingCount.text = String(hotel.rating_count)

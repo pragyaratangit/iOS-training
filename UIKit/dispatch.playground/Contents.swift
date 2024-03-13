@@ -136,11 +136,83 @@ a.async {
 //
 
 // if we execute a task syncronously on some queue(other than main)
-// then it may happend that our main thread is idea at that time
+// then it may happend that our main thread is idle at that time
 // so for better speed the task execute on main thread
+
 DispatchQueue.global().sync {
     print(Thread.isMainThread ? "main" : "other")
     for i in 1...10 {
         print(i)
     }
+}
+
+
+
+
+
+
+
+// main thread will be executed first because queue's task have a sleep time
+/*
+let queue = DispatchQueue(label: "queue", attributes: .concurrent)
+for i in 0...1000 {
+    queue.async {
+        Thread.sleep(forTimeInterval: 1.0)
+        print("task \(i) is executing")
+    }
+
+    print("loop \(i)")
+}
+
+
+DispatchQueue.main.async{
+    print("all task completed")
+}
+*/
+
+
+
+
+// semaphor
+// work as a guard for shared data which ensure obky a jouner my darking
+// shared counter
+var sharedCounter = 0
+var semaphor = DispatchSemaphore(value: 1)
+
+func firstTask() {
+    semaphor.wait()
+    
+    for _ in 1...5 {
+        print(Thread.current)
+        sharedCounter += 1
+        print("Task One: \(sharedCounter)")
+    }
+    
+    semaphor.signal()
+}
+
+func secondTask() {
+    
+    semaphor.wait()
+    
+    for _ in 1...5 {
+        print(Thread.current)
+        sharedCounter -= 1
+        print("Task Two: \(sharedCounter)")
+    }
+    
+    semaphor.signal()
+}
+
+
+let semaphorQueue = DispatchQueue(label: "semaphor.queue", attributes: .concurrent)
+
+
+semaphorQueue.async {
+    firstTask()
+    
+}
+
+semaphorQueue.async {
+    secondTask()
 }
