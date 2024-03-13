@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,16 +17,16 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="516" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="516" height="89"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jtN-18-Aew">
-                    <rect key="frame" x="250" y="25" width="258" height="50"/>
+                    <rect key="frame" x="198.33333333333334" y="25" width="309.66666666666663" height="39"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEq-Ef-LvQ">
-                    <rect key="frame" x="8" y="25" width="232" height="50"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEq-Ef-LvQ">
+                    <rect key="frame" x="8" y="25" width="180.33333333333334" height="39"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -33,6 +34,7 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <accessibility key="accessibilityConfiguration" identifier="InputView"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="pEq-Ef-LvQ" secondAttribute="bottom" constant="25" id="1kb-pP-iPp"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jtN-18-Aew" secondAttribute="trailing" constant="8" id="3cA-a4-zn3"/>
@@ -40,11 +42,11 @@
                 <constraint firstAttribute="bottom" secondItem="jtN-18-Aew" secondAttribute="bottom" constant="25" id="IS1-nf-trM"/>
                 <constraint firstItem="jtN-18-Aew" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="MDD-mP-SRP"/>
                 <constraint firstItem="pEq-Ef-LvQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Pcd-x4-9QD"/>
-                <constraint firstItem="jtN-18-Aew" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="aYG-Rq-j6q"/>
+                <constraint firstItem="jtN-18-Aew" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="aYG-Rq-j6q"/>
                 <constraint firstItem="jtN-18-Aew" firstAttribute="leading" secondItem="pEq-Ef-LvQ" secondAttribute="trailing" constant="10" id="xyo-0a-I2P"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="167.93893129770993" y="-90.845070422535215"/>
+            <point key="canvasLocation" x="167.93893129770993" y="-94.718309859154928"/>
         </view>
     </objects>
     <resources>
