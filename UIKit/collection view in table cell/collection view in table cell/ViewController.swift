@@ -41,7 +41,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         table.register(TableViewCell.nib(), forCellReuseIdentifier: TableViewCell.identifier)
+        
         table.delegate = self
+        
         table.dataSource = self
     }
 

@@ -17,34 +17,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHN-Go-JHS" customClass="CustomView" customModule="custom_view_component" customModuleProvider="target">
-                                <rect key="frame" x="8" y="159" width="377" height="150"/>
+                                <rect key="frame" x="8" y="159" width="377" height="170.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="5Zn-zs-sVu"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAf-YW-rEn" customClass="CustomView" customModule="custom_view_component" customModuleProvider="target">
-                                <rect key="frame" x="8" y="359" width="377" height="150"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezT-mi-fx1" customClass="CustomView" customModule="custom_view_component" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="379.33333333333331" width="385" height="170.33333333333331"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="dhe-Y3-mlt"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eHN-Go-JHS" secondAttribute="trailing" constant="8" id="6ah-Pe-2qa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fAf-YW-rEn" secondAttribute="trailing" constant="8" id="LIB-Ge-Obz"/>
+                            <constraint firstItem="ezT-mi-fx1" firstAttribute="top" secondItem="eHN-Go-JHS" secondAttribute="bottom" constant="50" id="8K3-CK-mvB"/>
                             <constraint firstItem="eHN-Go-JHS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="MHm-KA-0qe"/>
-                            <constraint firstItem="fAf-YW-rEn" firstAttribute="top" secondItem="eHN-Go-JHS" secondAttribute="bottom" constant="50" id="Yaa-b0-UVD"/>
-                            <constraint firstItem="fAf-YW-rEn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="h2Z-XJ-1Xl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ezT-mi-fx1" secondAttribute="trailing" constant="8" id="TNU-UN-5i9"/>
+                            <constraint firstItem="ezT-mi-fx1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yju-R2-MsT"/>
+                            <constraint firstItem="ezT-mi-fx1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="gpt-aL-twx"/>
+                            <constraint firstItem="eHN-Go-JHS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="pT8-0h-E6i"/>
                             <constraint firstItem="eHN-Go-JHS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="qJU-x8-BrY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="firstView" destination="eHN-Go-JHS" id="WGG-Fr-s77"/>
-                        <outlet property="secondView" destination="fAf-YW-rEn" id="OJM-bf-J9Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

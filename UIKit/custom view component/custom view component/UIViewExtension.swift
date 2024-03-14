@@ -10,6 +10,7 @@ import UIKit
 
 
 extension UIView{
+    
     func loadViewFromNIb( nibName: String) -> UIView? {
         
         let bundle = Bundle(for: type(of: self))
