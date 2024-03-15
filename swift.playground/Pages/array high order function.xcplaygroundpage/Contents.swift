@@ -79,3 +79,10 @@ print(arrayOfarray.flatMap{$0})
 // filter
 var normalArr = [1,2,3,4,4,5,3,43,24,24,3,3,4,4,322,3,432,3,2]
 print(normalArr.filter{$0 % 3 == 1 || $0 % 3 == 2})
+
+
+var reducedArr = normalArr.reduce("0") { partialResult, ele in
+    return String(ele) + "a"
+}
+print(reducedArr)
+

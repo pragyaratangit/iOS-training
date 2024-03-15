@@ -54,20 +54,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         tableViewSetup()
-        getHotelData(url: "https://oyolistingapi.free.beeceptor.com/getHotelData") {
+        getHotelData(url: "https://mp1b23a79f78ba8c70e2.free.beeceptor.com/hotelData") {
             data in
             self.hotels = data
             DispatchQueue.main.async {
                 self.listingTable.reloadData()
             }
         }
+        listingTable.separatorStyle = .none
         
     }
     
     func tableViewSetup() {
-        listingTable.register(CustomTableViewCell.nib(), forCellReuseIdentifier: CustomTableViewCell.identifier)
+//        listingTable.register(CustomTableViewCell.nib(), forCellReuseIdentifier: CustomTableViewCell.identifier)
+//        listingTable.dataSource = self
+//        listingTable.delegate = self
+          listingTable.register(ListingTableViewCell.nib(), forCellReuseIdentifier: ListingTableViewCell.identifier)
         listingTable.dataSource = self
         listingTable.delegate = self
+      
         
     }
     
@@ -78,11 +83,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = listingTable.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as! CustomTableViewCell
+//        let cell = listingTable.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as! CustomTableViewCell
+//        
+//        cell.configure(with: hotels.hotelData[indexPath.row])
+//        
+//        return cell
+        let cell = listingTable.dequeueReusableCell(withIdentifier: ListingTableViewCell.identifier, for: indexPath) as! ListingTableViewCell
         
         cell.configure(with: hotels.hotelData[indexPath.row])
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        listingTable.deselectRow(at: indexPath, animated: false)
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
