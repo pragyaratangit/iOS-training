@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         userDetail.age = Int(ageTextField?.text! ?? "0")
         userDetail.contact = contactTextField?.text!
         userDetail.city = cityTextField?.text!
+        
         let defaults = UserDefaults.standard
         
         defaults.setValue( try? PropertyListEncoder().encode(userDetail) , forKey: "userDetail")
@@ -49,15 +50,11 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         var userDetail = UserDetail()
         if let userData = defaults.value(forKey: "userDetail") as? Data {
-            
             userDetail =  try! PropertyListDecoder().decode(UserDetail.self
                                                       , from: userData)
-            
         }
         
         updateValue(userDetail: userDetail)
-        
-        
     }
     func updateValue(userDetail: UserDetail){
         nameTextField.text = userDetail.name!

@@ -69,18 +69,17 @@ class ListingTableViewCell: UITableViewCell {
         
     }
     func initialStyling() {
+        
         hotelImage.layer.cornerRadius = 10
         hotelImage.contentMode = .scaleToFill
         ratingCount.textColor = UIColor.gray
         shortAddress.textColor = UIColor.gray
         service1.textColor = .purple
         originalPrice.font = .boldSystemFont(ofSize: 25)
-    
         discountPercentage.textColor = .systemGreen
         paymentMode.textColor = .systemGreen
         paymentMode.backgroundColor = .systemGreen.withAlphaComponent(0.1)
-        paymentMode.layer.cornerRadius = 50
-//        paymentModeView.backgroundColor = .systemGreen.withAlphaComponent(0.1)
+//        paymentMode.layer.cornerRadius = 100
         
         taxTxn.textColor = .gray
     

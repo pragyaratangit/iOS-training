@@ -180,28 +180,30 @@ var sharedCounter = 0
 var semaphor = DispatchSemaphore(value: 1)
 
 func firstTask() {
-    semaphor.wait()
+//    semaphor.wait()
     
     for _ in 1...5 {
-        print(Thread.current)
+//        print(Thread.current)
         sharedCounter += 1
         print("Task One: \(sharedCounter)")
+        Thread.sleep(forTimeInterval: 1)
     }
     
-    semaphor.signal()
+//    semaphor.signal()
 }
 
 func secondTask() {
     
-    semaphor.wait()
+//    semaphor.wait()
     
     for _ in 1...5 {
-        print(Thread.current)
+//        print(Thread.current)
         sharedCounter -= 1
         print("Task Two: \(sharedCounter)")
+        Thread.sleep(forTimeInterval: 1)
     }
     
-    semaphor.signal()
+//    semaphor.signal()
 }
 
 
@@ -209,10 +211,16 @@ let semaphorQueue = DispatchQueue(label: "semaphor.queue", attributes: .concurre
 
 
 semaphorQueue.async {
-    firstTask()
+    semaphor.wait()
     
+    firstTask()
+    semaphor.signal()
 }
 
 semaphorQueue.async {
+    semaphor.wait()
+    
     secondTask()
+    
+    semaphor.signal()
 }

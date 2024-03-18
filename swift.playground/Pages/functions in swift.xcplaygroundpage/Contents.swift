@@ -6,7 +6,6 @@ var greeting = "Hello, playground"
 
 //: [Next](@next)
 // syntax of defining
-cl
 func checkForNum(arg1: Int, arg2: String) -> Bool {
     return arg1 == Int(arg2)
 }

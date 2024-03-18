@@ -41,9 +41,6 @@ class CustomTableViewCell: UITableViewCell {
    
     public func configure(with hotel: Hotel){
         
-        
-       
-        
         DispatchQueue.global(qos: .userInitiated).async {
             if let data = try? Data(contentsOf: URL(string: hotel.image)!){
                 DispatchQueue.main.async{
